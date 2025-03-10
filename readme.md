@@ -19,8 +19,8 @@ This project demonstrates how to build a **Retrieval-Augmented Generation (RAG)*
 Clone the repository to your local machine:
 
 ```bash
-git clone git@github.com:paudelanil/simple-rag-genai.git
-cd simple-rag-genai
+git clone git@github.com:aayush-puri-01/RAG-GENAI.git
+cd RAG-GENAI
 ```
 
 ### **2. Instal Dependencies**
@@ -37,7 +37,7 @@ Place your PDF documents in the `data/raw/` directory. These PDFs will be ingest
 
 ```bash
 # Example:
-data/
+knowledge/
 └── raw/
     ├── document1.pdf
     ├── document2.pdf
@@ -49,7 +49,7 @@ data/
 To create the knowledge base from your documents, run the following script:
 
 ```bash
-python src/build_kb.py
+python src/knowledgebase.py
 ```
 
 ### **4. Interact with the Knowledge Base**
@@ -61,6 +61,8 @@ To run the interactive query system, use:
 ```bash
 python src/main.py
 ```
+
+## **Outputs**
 
 ![alt text](snaps/knb.png)
 ![alt text](snaps/out1.png)
